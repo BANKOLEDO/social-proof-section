@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Color */
+
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral Color */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+#entire-page{
+    background: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: grid;
+}
+
+.products-ratings {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.ratings-heading {
+    font-size: 2.7rem;
+    font-weight: 900;
+    line-height: 2rem;
+    margin: 0 1.2rem;
+    color: var(--very-dark-magenta);
+}
+
+.heading-caption {
+    font-size: 1.2rem;
+    margin: 1.5rem 1.5rem;
+    color: var(--very-dark-magenta);
+}
+
+
+
+.ratings {
+    margin: 1rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 3.2rem;
+    border-radius: 0.7rem;
+}
+
+.reviews, .report, .best-tech {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--very-dark-magenta)
+}
+
+.card {
+    margin: 1rem 1.5rem;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    border-radius: 0.7rem;
+}
+
+.top-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.name {
+    font-size: 0.8rem;
+    color: var(--white);
+    margin-bottom: 0.4rem;
+}
+
+.verified {
+    font-size: 0.8rem;
+    color: var(--soft-pink);
+}
+
+.quotes {
+    font-weight: 300;
+    color: var(--white);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 750px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #entire-page {
+        width: 50rem;
+        padding: 2rem;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .products-ratings {
+        flex-direction: row;
+    }
+
+    .stats-text {
+        text-align: left;
+    }
+
+    .ratings-heading {
+        text-align: left;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: unset;
+        margin: 0 5rem 1rem 0;
+    }
+
+    .heading-caption {
+        margin: unset;
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+    .stars {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    .star {
+        margin-right: 0.5rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    
+    .ratings-container {
+        margin-top: -2rem;
+    }
+
+    .ratings {
+        padding: unset;
+        padding: 1rem;
+        width: 24rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .rating-2 {
+        margin-left: 2rem;
+    }
+
+    .rating-3 {
+        margin-left: 4rem;
+    }
+
+    .cards-container {
+        margin-top: 2rem;
+        display: flex;
+        height: 22rem;
+    }
+
+    .card {
+        margin: unset;
+        height: 18rem;
+    }
+
+    .card-1 {
+        margin-right: 2rem;
+    }
+
+    .card-2 {
+        margin: 2rem 2rem 0 0;
+    }
+
+    .card-3 {
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width:1080px) {
+    #entire-page {
+        width: 80%;
+    }
+
+    .ratings-heading {
+        font-size: 2.6rem;
+        margin: unset;
+        margin-right: 9rem;
+    }
+
+    .heading-caption {
+        margin: 2rem 7rem 0 0;
+        font-size: 1rem;
+    }
+
+    .card {
+        height: 16rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        height: 14rem;
+    }
+}
