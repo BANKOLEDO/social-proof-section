@@ -34,8 +34,8 @@ Mobile View
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://github.com/BANKOLEDO/social-proof-section)
+- Live Site URL: [Page Preview](https://social-proof-section-dusky-beta.vercel.app/)
 
 ## My process
 
